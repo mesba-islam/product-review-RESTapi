@@ -4,7 +4,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
-// initializing api
+//load initialize file 
 
 include_once('../core/initialize.php');
 
@@ -36,7 +36,7 @@ if($num>0){
 // convert data in json
     echo json_encode($product_arr);
 }else{
-    echo json_encode(array('message' => 'No product reviews Found'));
+    echo json_encode(array('message' => 'No products Found'));
 }
 
 

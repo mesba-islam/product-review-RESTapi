@@ -6,8 +6,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Methods:POST');
 header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods,Authorization,X-Requested-With');
 
-// initializing api
-
+//load initialize file 
 include_once('../core/initialize.php');
 
 
@@ -42,4 +41,5 @@ if (empty($review->user_id) || empty($review->product_id) || empty($review->revi
         echo json_encode(array('error' => 'Unable to add review.'));
     }
 }
+
 ?>

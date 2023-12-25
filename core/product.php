@@ -38,7 +38,7 @@ class Product
         // preparing statement
         $stmt = $this->conn->prepare($query);
 
-        // clean data
+        // sanitize data
         $this->user_id = htmlspecialchars(strip_tags($this->user_id));
         $this->product_id = htmlspecialchars(strip_tags($this->product_id));
         $this->review_text = htmlspecialchars(strip_tags($this->review_text));
