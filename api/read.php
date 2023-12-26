@@ -5,7 +5,6 @@ header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
 //load initialize file 
-
 include_once('../core/initialize.php');
 
 
